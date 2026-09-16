@@ -1,6 +1,6 @@
 # ELIBot — Mechatronics Laboratory (Robot: Advanced), Team 12
 
-**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built by Team 12 for the **Mechatronics Laboratory (Robot: Advanced)** course at **Kyoto University of Advanced Science (KUAS)**, to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station using only its onboard camera feed, with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
+**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built by Team 12 for the **Mechatronics Laboratory (Robot: Advanced)** course at **Kyoto University of Advanced Science (KUAS)**, to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station, driven by watching fixed cameras placed along the course (plus an optional onboard camera feed), with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
 
 > This repository documents the full design process — from the original tri-wheel concept to the final ELIBot — along with its firmware, ROS2 software stack, CAD/print files, and build media.
 
@@ -35,7 +35,7 @@ Mechatronics Laboratory (Robot: Advanced) is a hands-on robotics course, run ove
 
 The competition field laid out a mock "street" of obstacles a mobile robot has to get through under its own locomotion and, in places, its own manipulation — pushing/opening a door, climbing a slope, crossing uneven terrain and a ditch, reading a QR checkpoint, crossing a speed bump and a roller, climbing stairs, responding correctly to a traffic light to get a barrier opened, and picking up and carrying an object to a goal. ELIBot's design — the raised chassis and clawed wheels in particular — was driven directly by that obstacle set.
 
-The robot had to be untethered and was operated from a fixed station using only its onboard camera feed — no direct line of sight to the field — with a lightweight autonomous layer handling a few specific perception-driven behaviors (QR/traffic-light detection) on top of manual driving.
+The robot had to be untethered and was operated from a fixed station with no direct line of sight to the field — the operator watched a multi-window monitor fed by fixed cameras placed along the course, optionally supplemented by the robot's own onboard camera feed on a separate laptop — with a lightweight autonomous layer handling a few specific perception-driven behaviors (QR/traffic-light detection) on top of manual driving.
 
 ## Design Journey
 
