@@ -1,13 +1,13 @@
 # ELIBot — Mechatronics Laboratory (Robot: Advanced), Team 12
 
-**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built for the Mechatronics Laboratory (Robot: Advanced) course at **Kyoto University of Advanced Science (KUAS)**, Spring 2026. It combines a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm to autonomously/teleoperatively clear a 10-obstacle challenge course — doors, stairs, ditches, uneven terrain, a traffic-light-gated barrier, QR-code checkpoints, and an object-retrieval task.
+**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station using only its onboard camera feed, with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
 
 > This repository documents the full design process — from the original tri-wheel concept to the final ELIBot — along with its firmware, ROS2 software stack, CAD/print files, and build media.
 
 ## Table of Contents
 
 - [Team](#team)
-- [The Challenge](#the-challenge)
+- [What It Was Built For](#what-it-was-built-for)
 - [Design Journey](#design-journey)
 - [Final Design](#final-design)
   - [Mechanical](#mechanical)
@@ -29,26 +29,11 @@
 - Daphne Jillian Gan Tan
 - Muhammad Abdullah Zahid
 
-## The Challenge
+## What It Was Built For
 
-The course culminates in a 15th-week competition on a **364 cm × 273 cm** field with a 20 mm-wide line to follow and 10 distinct obstacles, run across two stages of increasing difficulty:
+ELIBot was designed and built as an entry for a rough-terrain robot obstacle course: a mock "street" of physical obstacles a mobile robot has to get through under its own locomotion and, in places, its own manipulation — pushing/opening a door, climbing a slope, crossing uneven terrain and a ditch, reading a QR checkpoint, crossing a speed bump and a roller, climbing stairs, responding correctly to a traffic light to get a barrier opened, and picking up and carrying an object to a goal.
 
-| # | Obstacle | Stage-I | Stage-II |
-|---|---|---|---|
-| 1 | Door | Open by any means | Must be pulled using the door handle |
-| 2 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
-| 3 | Slope | Climb up | Climb up |
-| 4 | Ditch crossing | Cross a 10×44×4 cm ditch | Cross the ditch |
-| 5 | QR code | Read it, change an onboard LED's color | Rotate the cardboard, then read + change LED color |
-| 6 | Speed bump | Cross it | Cross it |
-| 7 | Roller (pipe) | Cross a ¾" pipe roller | Cross the roller |
-| 8 | Stairs | Climb up/down from any direction | Climb up/down |
-| 9 | Traffic light & barrier | Detect the light color, signal it wirelessly to open the barrier | Same |
-| 10 | Object transport | Move a 5×5×11 cm object to the goal | **Lift** the object and transport it |
-
-Robots may be **autonomous, teleoperated, or hybrid**, must be **untethered**, and score out of 140 points (100 from field performance + 40 from instructor evaluation on originality, presentation, robot completeness, and team effort). Autonomous robots earn a 15-point bonus for reaching a marked checkpoint unassisted. Teleoperated robots must be controlled from a fixed operator station using only the on-robot camera feed (no direct line of sight), over a dedicated wireless link.
-
-Full rules: [`Robot Challenge and Field Details 2025.pdf`](./Robot%20Challenge%20and%20Field%20Details%202025.pdf)
+The robot had to be untethered and was operated from a fixed station using only its onboard camera feed — no direct line of sight to the field — with a lightweight autonomous layer handling a few specific perception-driven behaviors (QR/traffic-light detection) on top of manual driving.
 
 ## Design Journey
 
@@ -151,7 +136,7 @@ The vision node can also run off-robot on a separate, more powerful machine over
 
 ## Acknowledgments & References
 
-Built for the Mechatronics Laboratory (Robot: Advanced) course, Kyoto University of Advanced Science, Spring 2025.
+Built for the Mechatronics Laboratory (Robot: Advanced) course, Kyoto University of Advanced Science, Spring 2026.
 
 The clawed-wheel concept was inspired by prior work on configurable wheel-legs:
 
