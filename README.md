@@ -35,7 +35,7 @@ The course culminates in a 15th-week competition on a **364 cm × 273 cm** field
 
 | # | Obstacle | Stage-I | Stage-II |
 |---|---|---|---|
-| 1 | Door | Open by any means | Must be opened using the door handle |
+| 1 | Door | Open by any means | Must be pulled using the door handle |
 | 2 | Slope | Climb up | Climb up |
 | 3 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
 | 4 | Ditch crossing | Cross a 10×44×4 cm ditch | Cross the ditch |
