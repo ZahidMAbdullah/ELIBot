@@ -39,11 +39,13 @@ The robot had to be untethered and was operated from a fixed station with no dir
 
 ## Design Journey
 
-The team's first concept was a **tri-wheel robot**: a spring-suspended front "wheel-leg" (inspired by configurable wheel-leg mechanisms in the literature) for climbing stairs/ditches, a rear pair of wheels on a 4-bar spring suspension for uneven terrain, and a top-mounted 3-DOF manipulator arm with a solenoid-driven pincher gripper.
+ELIBot went through three distinct mechanical designs:
 
-During prototyping, the tri-wheel base proved **unstable**, so the team pivoted to a **four-wheeled** layout partway through the build — trading the reconfigurable front wheel-leg for a fixed spiked/clawed wheel on all four corners, and simplifying the arm from 3-DOF + pincher down to a lighter 1-DOF hook mechanism for better weight distribution and stair-climbing stability.
+1. **Tri-wheel concept** (original pitch): a spring-suspended front "wheel-leg" (inspired by configurable wheel-leg mechanisms in the literature) for climbing stairs/ditches, a rear pair of wheels on a 4-bar spring suspension for uneven terrain, and a top-mounted 3-DOF manipulator arm with a solenoid-driven pincher gripper.
+2. **Four-wheel, front-spiked only**: the tri-wheel base proved **unstable**, so the team pivoted to a four-wheeled layout — but only the front pair used spiked/clawed wheels, with plain wheels still at the rear.
+3. **Four-wheel, all-spiked** (final): the plain rear wheels in design 2 didn't grip well enough to climb the stairs, so the team switched to spiked/clawed wheels on all four corners. The manipulator arm was also simplified from 3-DOF + pincher down to a lighter 1-DOF hook mechanism, for better weight distribution and stair-climbing stability.
 
-Both design phases are preserved in this repository — see [`Old Design/`](./Old%20Design) for the original tri-wheel concept (CAD, images, videos) and [`Robot Concept Presentation/`](./Robot%20Concept%20Presentation) for the original pitch, versus the final design described below and detailed in the [final report](./Teams12_final_report.pdf).
+This history is preserved in this repository: [`Old Design/`](./Old%20Design) and [`Robot Concept Presentation/`](./Robot%20Concept%20Presentation) cover design 1 (the tri-wheel concept), and the [`Intermediate Presentation/`](./Intermediate%20Presentation) documents the transition from design 1 to design 2. Design 3, the final version, is described below and in the [final report](./Teams12_final_report.pdf).
 
 ## Final Design
 
@@ -134,7 +136,7 @@ The vision node can also run off-robot on a separate, more powerful machine over
 - [Final report](./Teams12_final_report.pdf) — full design writeup (this README summarizes it)
 - [Challenge & field rules](./Robot%20Challenge%20and%20Field%20Details%202025.pdf)
 - [Concept presentation](./Robot%20Concept%20Presentation/Concept%20Presentation%20%28Superseded%20Tri-Wheel%20Design%29.pdf) — the original tri-wheel pitch; **superseded**, describes a different robot than the one that was actually built
-- [Intermediate presentation](./Intermediate%20Presentation/Intermediate%20Presentation%20%28Design%20Transition%20Checkpoint%29.pdf) — a mid-project checkpoint, snapshotting the tri-wheel-to-four-wheel pivot partway through; some details in it (e.g. the manipulator's pincher end effector) were later changed again before the final design
+- [Intermediate presentation](./Intermediate%20Presentation/Intermediate%20Presentation%20%28Design%20Transition%20Checkpoint%29.pdf) — a mid-project checkpoint documenting the pivot from the tri-wheel design to the second, four-wheel design (front wheels spiked, rear wheels still plain); that rear-wheel choice and the manipulator's pincher end effector shown here were both changed again before the final design
 
 ## Acknowledgments & References
 
