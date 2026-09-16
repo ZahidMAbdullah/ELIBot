@@ -1,6 +1,6 @@
 # ELIBot — Mechatronics Laboratory (Robot: Advanced), Team 12
 
-**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built for the Mechatronics Laboratory (Robot: Advanced) course at **Kyoto University of Advanced Science (KUAS)**, Spring 2025. It combines a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm to autonomously/teleoperatively clear a 10-obstacle challenge course — doors, stairs, ditches, uneven terrain, a traffic-light-gated barrier, QR-code checkpoints, and an object-retrieval task.
+**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built for the Mechatronics Laboratory (Robot: Advanced) course at **Kyoto University of Advanced Science (KUAS)**, Spring 2026. It combines a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm to autonomously/teleoperatively clear a 10-obstacle challenge course — doors, stairs, ditches, uneven terrain, a traffic-light-gated barrier, QR-code checkpoints, and an object-retrieval task.
 
 > This repository documents the full design process — from the original tri-wheel concept to the final ELIBot — along with its firmware, ROS2 software stack, CAD/print files, and build media.
 
@@ -21,7 +21,7 @@
 
 ## Team
 
-**Team 12**, Mechatronics Laboratory (Robot: Advanced), Spring 2025:
+**Team 12**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
 
 - Abdullah Al Ayaat
 - G. C. Mohnish
@@ -35,9 +35,9 @@ The course culminates in a 15th-week competition on a **364 cm × 273 cm** field
 
 | # | Obstacle | Stage-I | Stage-II |
 |---|---|---|---|
-| 1 | Door | Open by any means | Must be opened using the door handle |
-| 2 | Slope | Climb up | Climb up |
-| 3 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
+| 1 | Door | Open by any means | Must be pulled using the door handle |
+| 2 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
+| 3 | Slope | Climb up | Climb up |
 | 4 | Ditch crossing | Cross a 10×44×4 cm ditch | Cross the ditch |
 | 5 | QR code | Read it, change an onboard LED's color | Rotate the cardboard, then read + change LED color |
 | 6 | Speed bump | Cross it | Cross it |
