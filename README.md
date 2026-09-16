@@ -36,8 +36,8 @@ The course culminates in a 15th-week competition on a **364 cm × 273 cm** field
 | # | Obstacle | Stage-I | Stage-II |
 |---|---|---|---|
 | 1 | Door | Open by any means | Must be pulled using the door handle |
-| 2 | Slope | Climb up | Climb up |
-| 3 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
+| 2 | Uneven terrain | Traverse random-height steps (5–25 mm) | Traverse random-height steps |
+| 3 | Slope | Climb up | Climb up |
 | 4 | Ditch crossing | Cross a 10×44×4 cm ditch | Cross the ditch |
 | 5 | QR code | Read it, change an onboard LED's color | Rotate the cardboard, then read + change LED color |
 | 6 | Speed bump | Cross it | Cross it |
