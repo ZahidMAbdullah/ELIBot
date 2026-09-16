@@ -21,7 +21,7 @@
 
 ## Team
 
-**Team**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
+**Team 12**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
 
 - Abdullah Al Ayaat
 - G. C. Mohnish
