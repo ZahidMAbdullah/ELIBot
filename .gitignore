@@ -1,0 +1,21 @@
+# PlatformIO / mbed firmware build artifacts
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ROS2 / colcon build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Pretrained model weights (auto-downloaded by ultralytics on first run)
+yolov8n.pt
+
+# Editor/tool-local settings (not part of the project)
+.claude/
+.vscode/.browse.c_cpp.db*

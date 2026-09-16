@@ -116,17 +116,15 @@ Firmware protocol (STM32 side): 8 slash-separated values — 4 motor duty cycles
 1. Connect the STM32 to the Raspberry Pi 4; power the Pi from the power bank.
 2. (Setup/debug) Connect via HDMI to a monitor, or view the Pi's desktop remotely, to launch ROS2 nodes from a terminal.
 3. Launch, in order:
-   1. Camera publisher node → publishes to `/camera/image_raw`
-   2. Vision status node → subscribes to the camera topic, publishes `/vision_status` on state changes
-   3. LED indicator node → subscribes to `/vision_status`, drives the QR indicator LEDs
-   4. Teleoperation node → reads keyboard input, sends serial commands to the STM32
+   1. `ros2 launch ml3_vision qr_led.launch.py` → starts the camera publisher, vision status node, and QR LED indicator together
+   2. `ros2 run ml3_robot_ctrl motorservo_teleop_controller --port /dev/ttyACM0` → keyboard teleop, sends serial commands to the STM32
 4. Disconnect the setup peripherals, connect the drive battery, and verify wheel + arm motion before running the course.
 
-Full details: [final report, §3](./Teams12_final_report.pdf).
+Full build/run instructions and dependencies: [`ml3_source_code/README.md`](./ml3_source_code/README.md). Full narrative details: [final report, §3](./Teams12_final_report.pdf).
+
+The vision node can also run off-robot on a separate, more powerful machine over the network instead of on the Pi — see [`ml3_source_code/README.md`](./ml3_source_code/README.md#3-vision-node-onboard-vs-remote-deployment) for that configuration (`ml3_ros2_ws_server/`), which was used during development to experiment with heavier detection models than the Pi could run in real time.
 
 ## Repository Structure
-
-> This repo is being populated incrementally; the layout below is the target structure and will be filled in over the next few commits.
 
 ```
 .
@@ -137,10 +135,10 @@ Full details: [final report, §3](./Teams12_final_report.pdf).
 ├── Intermediate Presentation/        # mid-project checkpoint deck
 ├── Old Design/                       # scrapped tri-wheel concept: CAD, images, videos
 ├── STL Files/                        # final ELIBot print files (STL/gcode)
-├── ml3_source_code/
-│   ├── ML3_Nucleo_Projects/          # STM32 firmware (PlatformIO/mbed)
-│   ├── ml3_ros2_ws_robot/            # ROS2 workspace deployed on the Raspberry Pi
-│   └── ml3_ros2_ws_server/           # ROS2 workspace for the off-robot vision server
+├── ml3_source_code/                  # firmware + ROS2 software — see its own README
+│   ├── ML3_Nucleo_Projects/          # STM32 firmware (PlatformIO/mbed): combined_node (final), motors_only/servos_only (debug isolation builds)
+│   ├── ml3_ros2_ws_robot/            # ROS2 workspace deployed ON the Raspberry Pi (camera, vision, teleop)
+│   └── ml3_ros2_ws_server/           # optional: vision node deployable on a separate, more powerful machine instead of the Pi
 └── Media/                            # photos and video (large raw footage hosted externally)
 ```
 
