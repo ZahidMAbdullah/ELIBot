@@ -45,7 +45,7 @@ ELIBot went through three distinct mechanical designs:
 2. **Four-wheel, front-spiked only**: the tri-wheel base proved **unstable**, so the team pivoted to a four-wheeled layout — but only the front pair used spiked/clawed wheels, with plain wheels still at the rear.
 3. **Four-wheel, all-spiked** (final): the plain rear wheels in design 2 didn't grip well enough to climb the stairs, so the team switched to spiked/clawed wheels on all four corners. The manipulator arm was also simplified from 3-DOF + pincher down to a lighter 1-DOF hook mechanism, for better weight distribution and stair-climbing stability.
 
-This history is preserved in this repository: [`Old Design/`](./Old%20Design) and [`Robot Concept Presentation/`](./Robot%20Concept%20Presentation) cover design 1 (the tri-wheel concept), and the [`Intermediate Presentation/`](./Intermediate%20Presentation) documents the transition from design 1 to design 2. Design 3, the final version, is described below and in the [final report](./Teams12_final_report.pdf).
+Designs 1 and 2 are documented here only through their presentations — [`Robot Concept Presentation/`](./Robot%20Concept%20Presentation) for design 1 (the tri-wheel concept), and [`Intermediate Presentation/`](./Intermediate%20Presentation) for the transition from design 1 to design 2 — rather than through their raw CAD/design files. Design 3, the final version that was actually built, is described below, in the [final report](./Teams12_final_report.pdf), and via the source/print files elsewhere in this repository.
 
 ## Final Design
 
@@ -122,7 +122,6 @@ The vision node can also run off-robot on a separate, more powerful machine over
 ├── Robot Challenge and Field Details 2025.pdf
 ├── Robot Concept Presentation/       # superseded tri-wheel concept pitch — not the final design
 ├── Intermediate Presentation/        # mid-project checkpoint — shows the tri-wheel -> four-wheel transition
-├── Old Design/                       # scrapped tri-wheel concept: CAD, images, videos
 ├── STL Files/                        # final ELIBot print files (STL/gcode)
 ├── source-code/                      # firmware + ROS2 software — see its own README
 │   ├── Nucleo_Firmware/              # STM32 firmware (PlatformIO/mbed): combined_node (final), motors_only/servos_only (debug isolation builds)
