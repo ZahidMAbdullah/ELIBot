@@ -1,6 +1,6 @@
 # ELIBot — Mechatronics Laboratory (Robot: Advanced), Team 12
 
-**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built by Team 12 for the **Mechatronics Laboratory (Robot: Advanced)** course at **Kyoto University of Advanced Science (KUAS)**, to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station using only its onboard camera feed, with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
+**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built by a team of 5 undergraduate students for the Mechatronics Laboratory (Robot: Advanced) course at Kyoto University of Advanced Science (KUAS), to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station using only its onboard camera feed, with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
 
 > This repository documents the full design process — from the original tri-wheel concept to the final ELIBot — along with its firmware, ROS2 software stack, CAD/print files, and build media.
 
@@ -21,7 +21,7 @@
 
 ## Team
 
-**Team 12**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
+**Team**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
 
 - Abdullah Al Ayaat
 - G. C. Mohnish
