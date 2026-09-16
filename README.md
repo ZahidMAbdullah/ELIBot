@@ -17,6 +17,7 @@
 - [Operating Instructions](#operating-instructions)
 - [Repository Structure](#repository-structure)
 - [Documents](#documents)
+- [Media](#media)
 - [Acknowledgments & References](#acknowledgments--references)
 
 ## Team
@@ -137,6 +138,12 @@ The vision node can also run off-robot on a separate, more powerful machine over
 - [Concept presentation](./Robot%20Concept%20Presentation/Concept%20Presentation%20%28Superseded%20Tri-Wheel%20Design%29.pdf) — the original tri-wheel pitch; **superseded**, describes a different robot than the one that was actually built
 - [Intermediate presentation](./Intermediate%20Presentation/Intermediate%20Presentation%20%28Design%20Transition%20Checkpoint%29.pdf) — a mid-project checkpoint documenting the pivot from the tri-wheel design to the second, four-wheel design (front wheels spiked, rear wheels still plain); that rear-wheel choice and the manipulator's pincher end effector shown here were both changed again before the final design
 - [Final presentation video (Week 15)](https://drive.google.com/file/d/1nr6MhxmOqBarv2mEdx8B2zVPzM3RgYNS/view?usp=drive_link) — the team's video presentation of the finished robot, made right before the competition run (hosted on Google Drive; not tracked in this repo due to file size)
+
+## Media
+
+### Videos
+
+- [Stage II official run (Week 15)](https://drive.google.com/file/d/196SE-jIKrzIXMWrg3RmbG3_Q3yIPCxZ9/view?usp=sharing) — full video of ELIBot's official run on the challenge field for Stage II of the competition (hosted on Google Drive; not tracked in this repo due to file size)
 
 ## Acknowledgments & References
 
