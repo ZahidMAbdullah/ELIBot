@@ -1,6 +1,6 @@
-# ELIBot — Mechatronics Laboratory (Robot: Advanced), Team 12
+# ELIBot — Mechatronics Laboratory (Robot: Advanced)
 
-**ELIBot** is a four-wheeled, spiked/clawed-wheel all-terrain robot built by Team 12 for the **Mechatronics Laboratory (Robot: Advanced)** course at **Kyoto University of Advanced Science (KUAS)**, to clear an obstacle course — doors, stairs, ditches, uneven terrain, a sensor-gated barrier, QR-code checkpoints, and an object-retrieval task — combining a raised, high-clearance chassis, a custom rigid/flexible claw wheel, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station, driven by watching fixed cameras placed along the course (plus an optional onboard camera feed), with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
+**ELIBot** is a four-wheeled, all-terrain robot with spiked/clawed wheels, developed by a team of five undergraduate students for the *Mechatronics Laboratory (Robot: Advanced)* course at Kyoto University of Advanced Science (KUAS). Designed to navigate a challenging obstacle course—including a door, uneven terrain, slope, ditch, QR-code checkpoint, ledge, roller obstacle, speed bump, stairs, a traffic-light-controlled barrier, and an object-retrieval task—the robot combines a raised, high-clearance chassis, custom rigid/flexible claw wheels, and a lightweight single-DOF manipulator arm. It's primarily teleoperated from a remote operator station, watching fixed cameras placed along the course (plus an optional onboard camera feed), with support for minimal autonomous behaviors (e.g. reacting to the traffic light on its own) layered on top.
 
 > This repository documents the full design process — from the original tri-wheel concept to the final ELIBot — along with its firmware, ROS2 software stack, CAD/print files, and build media.
 
@@ -21,7 +21,7 @@
 
 ## Team
 
-**Team 12**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
+**Team**, Mechatronics Laboratory (Robot: Advanced), Spring 2026:
 
 - Abdullah Al Ayaat
 - G. C. Mohnish
@@ -31,7 +31,7 @@
 
 ## What It Was Built For
 
-Mechatronics Laboratory (Robot: Advanced) is a hands-on robotics course, run over one semester, where small teams design, fabricate, and program a robot from scratch. It culminates in a robot challenge held during the course's 15th week: a field of physical obstacles that every team's robot has to get through under its own power. ELIBot is Team 12's entry for that challenge.
+Mechatronics Laboratory (Robot: Advanced) is a hands-on robotics course, run over one semester, where small teams design, fabricate, and program a robot from scratch. It culminates in a robot challenge held during the course's 15th week: a field of physical obstacles that every team's robot has to get through under its own power. ELIBot is this team's entry for that challenge.
 
 The competition field laid out a mock "street" of obstacles a mobile robot has to get through under its own locomotion and, in places, its own manipulation — pushing/opening a door, climbing a slope, crossing uneven terrain and a ditch, reading a QR checkpoint, crossing a speed bump and a roller, climbing stairs, responding correctly to a traffic light to get a barrier opened, and picking up and carrying an object to a goal. ELIBot's design — the raised chassis and clawed wheels in particular — was driven directly by that obstacle set.
 
