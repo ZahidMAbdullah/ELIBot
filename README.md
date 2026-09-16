@@ -94,20 +94,20 @@ USB Camera ──▶ Camera Publisher Node ──/camera/image_raw──▶ Visi
 - **LED indicator node** — drives GPIO LEDs based on QR detection state.
 - **Teleoperation node** — converts operator keyboard input into the STM32's serial command protocol.
 
-Firmware protocol (STM32 side): 8 slash-separated values — 4 motor duty cycles `[-1.0, 1.0]` and 4 servo angles (degrees) — terminated by `d`, e.g. `0.5/0.5/0/0/90/0/0/-45d`. See [`ml3_source_code/ML3_Nucleo_Projects/combined_node/README.md`](./ml3_source_code/ML3_Nucleo_Projects/combined_node/README.md) for the full protocol and pin mapping.
+Firmware protocol (STM32 side): 8 slash-separated values — 4 motor duty cycles `[-1.0, 1.0]` and 4 servo angles (degrees) — terminated by `d`, e.g. `0.5/0.5/0/0/90/0/0/-45d`. See [`source-code/Nucleo_Firmware/combined_node/README.md`](./source-code/Nucleo_Firmware/combined_node/README.md) for the full protocol and pin mapping.
 
 ## Operating Instructions
 
 1. Connect the STM32 to the Raspberry Pi 4; power the Pi from the power bank.
 2. (Setup/debug) Connect via HDMI to a monitor, or view the Pi's desktop remotely, to launch ROS2 nodes from a terminal.
 3. Launch, in order:
-   1. `ros2 launch ml3_vision qr_led.launch.py` → starts the camera publisher, vision status node, and QR LED indicator together
-   2. `ros2 run ml3_robot_ctrl motorservo_teleop_controller --port /dev/ttyACM0` → keyboard teleop, sends serial commands to the STM32
+   1. `ros2 launch elibot_vision qr_led.launch.py` → starts the camera publisher, vision status node, and QR LED indicator together
+   2. `ros2 run elibot_robot_ctrl motorservo_teleop_controller --port /dev/ttyACM0` → keyboard teleop, sends serial commands to the STM32
 4. Disconnect the setup peripherals, connect the drive battery, and verify wheel + arm motion before running the course.
 
-Full build/run instructions and dependencies: [`ml3_source_code/README.md`](./ml3_source_code/README.md). Full narrative details: [final report, §3](./Teams12_final_report.pdf).
+Full build/run instructions and dependencies: [`source-code/README.md`](./source-code/README.md). Full narrative details: [final report, §3](./Teams12_final_report.pdf).
 
-The vision node can also run off-robot on a separate, more powerful machine over the network instead of on the Pi — see [`ml3_source_code/README.md`](./ml3_source_code/README.md#3-vision-node-onboard-vs-remote-deployment) for that configuration (`ml3_ros2_ws_server/`), which was used during development to experiment with heavier detection models than the Pi could run in real time.
+The vision node can also run off-robot on a separate, more powerful machine over the network instead of on the Pi — see [`source-code/README.md`](./source-code/README.md#3-vision-node-onboard-vs-remote-deployment) for that configuration (`elibot_ros2_ws_server/`), which was used during development to experiment with heavier detection models than the Pi could run in real time.
 
 ## Repository Structure
 
@@ -120,10 +120,10 @@ The vision node can also run off-robot on a separate, more powerful machine over
 ├── Intermediate Presentation/        # mid-project checkpoint deck
 ├── Old Design/                       # scrapped tri-wheel concept: CAD, images, videos
 ├── STL Files/                        # final ELIBot print files (STL/gcode)
-├── ml3_source_code/                  # firmware + ROS2 software — see its own README
-│   ├── ML3_Nucleo_Projects/          # STM32 firmware (PlatformIO/mbed): combined_node (final), motors_only/servos_only (debug isolation builds)
-│   ├── ml3_ros2_ws_robot/            # ROS2 workspace deployed ON the Raspberry Pi (camera, vision, teleop)
-│   └── ml3_ros2_ws_server/           # optional: vision node deployable on a separate, more powerful machine instead of the Pi
+├── source-code/                      # firmware + ROS2 software — see its own README
+│   ├── Nucleo_Firmware/              # STM32 firmware (PlatformIO/mbed): combined_node (final), motors_only/servos_only (debug isolation builds)
+│   ├── elibot_ros2_ws_robot/         # ROS2 workspace deployed ON the Raspberry Pi (camera, vision, teleop)
+│   └── elibot_ros2_ws_server/        # optional: vision node deployable on a separate, more powerful machine instead of the Pi
 └── Media/                            # photos and video (large raw footage hosted externally)
 ```
 
