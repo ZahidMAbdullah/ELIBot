@@ -118,8 +118,8 @@ The vision node can also run off-robot on a separate, more powerful machine over
 ├── README.md
 ├── Teams12_final_report.pdf
 ├── Robot Challenge and Field Details 2025.pdf
-├── Robot Concept Presentation/       # original tri-wheel pitch deck
-├── Intermediate Presentation/        # mid-project checkpoint deck
+├── Robot Concept Presentation/       # superseded tri-wheel concept pitch — not the final design
+├── Intermediate Presentation/        # mid-project checkpoint — shows the tri-wheel -> four-wheel transition
 ├── Old Design/                       # scrapped tri-wheel concept: CAD, images, videos
 ├── STL Files/                        # final ELIBot print files (STL/gcode)
 ├── source-code/                      # firmware + ROS2 software — see its own README
@@ -133,8 +133,8 @@ The vision node can also run off-robot on a separate, more powerful machine over
 
 - [Final report](./Teams12_final_report.pdf) — full design writeup (this README summarizes it)
 - [Challenge & field rules](./Robot%20Challenge%20and%20Field%20Details%202025.pdf)
-- [Concept presentation](./Robot%20Concept%20Presentation/ML3_Presentation_Team12.pdf) — original tri-wheel pitch
-- [Intermediate presentation](./Intermediate%20Presentation/Team12_IntermediatePresentation.pdf) — mid-project design pivot and status
+- [Concept presentation](./Robot%20Concept%20Presentation/Concept%20Presentation%20%28Superseded%20Tri-Wheel%20Design%29.pdf) — the original tri-wheel pitch; **superseded**, describes a different robot than the one that was actually built
+- [Intermediate presentation](./Intermediate%20Presentation/Intermediate%20Presentation%20%28Design%20Transition%20Checkpoint%29.pdf) — a mid-project checkpoint, snapshotting the tri-wheel-to-four-wheel pivot partway through; some details in it (e.g. the manipulator's pincher end effector) were later changed again before the final design
 
 ## Acknowledgments & References
 
