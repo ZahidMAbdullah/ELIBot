@@ -78,6 +78,8 @@ The arm went through the same simplification arc as the chassis: an initial 3-DO
 
 The Pi and STM32 communicate over USB serial at 115200 baud: the Pi sends motion/servo setpoints, the STM32 executes deterministic PWM control and echoes actuator feedback. A watchdog on the STM32 stops all motors if commands stop arriving, preventing runaways from a dropped link.
 
+For the full wiring/circuit diagram and electrical connections between all of these components, see §2.4 ("Circuit Design") of the [final report](./Teams12_final_report.pdf).
+
 ### Software Architecture
 
 High-level software runs as a modular **ROS2** stack on the Raspberry Pi:
