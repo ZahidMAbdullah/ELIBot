@@ -168,7 +168,7 @@ Final prototype, as built (see [`Media/Pictures/Robot Pictures/`](<./Media/Pictu
 <img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%209%29.jpg" width="240" />
 </p>
 
-Team 12, with ELIBot, at the Week 15 competition:
+Team 12, with ELIBot, at the Week 15 competition (left to right: Abdullah, Catherine, Mohnish, Ayaat, Daphne):
 
 <p align="center">
 <img src="./Media/Pictures/Team%20Pictures/Full%20Team%20Photo.jpg" width="500" />
