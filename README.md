@@ -54,8 +54,8 @@ Designs 1 and 2 are documented here only through their presentations — [`Robot
 
 ELIBot's body has three main parts:
 
-- **Chassis** — a simple removable-lid box housing the microcontroller, motor drivers, buck converter, and perfboards; sized to be sturdy against fall/testing impacts while giving easy access to the electronics.
-- **Brackets** — front (shorter) and rear (taller) leg-brackets holding the drive motors, sized asymmetrically to keep the robot level, shrink its turning footprint, and shift the center of mass rearward for stair climbing without tipping.
+- **Top Chassis / Bottom Chassis** — a simple box housing the microcontroller, motor drivers, buck converter, and perfboards, with a removable Top Chassis panel for easy access; sized to be sturdy against fall/testing impacts while still easy to open.
+- **Brackets / Support Brackets** — front (shorter) and rear (taller) main brackets hold the drive motors, each secured in place by a matching support bracket; sized asymmetrically to keep the robot level, shrink its turning footprint, and shift the center of mass rearward for stair climbing without tipping.
 - **Cage** — a lightweight top frame protecting the 12V LiPo battery, a power bank, and the Raspberry Pi 4, and keeping wiring organized.
 
 The signature feature is the **clawed/spiked wheel**: a rigid **PLA** inner hub (bolted to the motor shaft via a threaded brass connector) paired with a flexible **TPU** outer ring of 8 claws. The rigid hub keeps the wheel stable while the TPU claws flex on impact and grip stair edges/ledges — giving some of the benefit of a reconfigurable wheel-leg design without its mechanical complexity.
