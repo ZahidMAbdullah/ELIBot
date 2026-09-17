@@ -145,6 +145,22 @@ The vision node can also run off-robot on a separate, more powerful machine over
 
 - [Stage II official run (Week 15)](https://drive.google.com/file/d/196SE-jIKrzIXMWrg3RmbG3_Q3yIPCxZ9/view?usp=sharing) — full video of ELIBot's official run on the challenge field for Stage II of the competition (hosted on Google Drive; not tracked in this repo due to file size)
 
+### Photos
+
+Final prototype, as built (see [`Media/Pictures/Robot Pictures/`](<./Media/Pictures/Robot Pictures>) for the originals):
+
+<p align="center">
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%201%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%202%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%203%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%204%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%205%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%206%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%207%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%208%29.jpg" width="240" />
+<img src="./Media/Pictures/Robot%20Pictures/Final%20Prototype%20%28Photo%209%29.jpg" width="240" />
+</p>
+
 ## Acknowledgments & References
 
 Built for the Mechatronics Laboratory (Robot: Advanced) course, Kyoto University of Advanced Science, Spring 2026.
