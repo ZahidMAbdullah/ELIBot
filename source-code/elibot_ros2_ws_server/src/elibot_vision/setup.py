@@ -16,7 +16,7 @@ setup(
     maintainer='nisar-lab-abd',
     maintainer_email='nisar-lab-abd@todo.todo',
     description='Remote-deployable QR + traffic-light vision status node (pairs with elibot_ros2_ws_robot).',
-    license='TODO: License declaration',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',

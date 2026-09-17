@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>Evdev-keyboard teleop node for ELIBot's 4 drive motors + 3 manipulator servos, over serial to the STM32.</description>
   <maintainer email="elibot@todo.todo">elibot</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
