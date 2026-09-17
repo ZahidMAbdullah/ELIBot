@@ -19,6 +19,7 @@
 - [Documents](#documents)
 - [Media](#media)
 - [Acknowledgments & References](#acknowledgments--references)
+- [License](#license)
 
 ## Team
 
@@ -182,3 +183,7 @@ The clawed-wheel concept was inspired by prior work on configurable wheel-legs:
 
 1. R. Sell, G. Aryassov, A. Petritshenko, and M. Kaeeli, "Kinematics and dynamics of configurable wheel-leg," in *Proc. 8th Int. DAAAM Baltic Conf. Industrial Engineering*.
 2. C. Zheng and K. Lee, "Wheeler: Wheel-leg reconfigurable mechanism with passive gears for mobile robot applications," in *Proc. IEEE Int. Conf. Robotics and Automation (ICRA)*.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
