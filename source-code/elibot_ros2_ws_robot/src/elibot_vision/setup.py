@@ -19,7 +19,7 @@ setup(
     zip_safe=True,
     maintainer='elibot',
     maintainer_email='elibot@todo.todo',
-    description='TODO: Package description',
+    description='Onboard QR + traffic-light vision status node (runs on the Raspberry Pi) plus the LED indicator node that reacts to it.',
     license='MIT',
     extras_require={
         'test': [

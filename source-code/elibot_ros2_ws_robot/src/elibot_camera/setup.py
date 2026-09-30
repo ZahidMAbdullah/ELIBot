@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='elibot',
     maintainer_email='elibot@todo.todo',
-    description='TODO: Package description',
+    description='Publishes RGB frames from the onboard USB camera to /camera/image_raw for the vision pipeline.',
     license='MIT',
     extras_require={
         'test': [

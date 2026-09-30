@@ -18,6 +18,8 @@
 - [Repository Structure](#repository-structure)
 - [Documents](#documents)
 - [Media](#media)
+  - [Videos](#videos)
+  - [Photos](#photos)
 - [Acknowledgments & References](#acknowledgments--references)
 - [License](#license)
 
@@ -122,11 +124,12 @@ The vision node can also run off-robot on a separate, more powerful machine over
 ```
 .
 ├── README.md
+├── LICENSE
 ├── Teams12_final_report.pdf
 ├── Robot Challenge and Field Details 2025.pdf
 ├── Robot Concept Presentation/       # superseded tri-wheel concept pitch — not the final design
 ├── Intermediate Presentation/        # mid-project checkpoint — shows the tri-wheel -> four-wheel transition
-├── STL Files/                        # final ELIBot print files (STL/gcode)
+├── STL Files/                        # final ELIBot print files (STL), organized by body/wheels/manipulator
 ├── source-code/                      # firmware + ROS2 software — see its own README
 │   ├── Nucleo_Firmware/              # STM32 firmware (PlatformIO/mbed): combined_node (final), motors_only/servos_only (debug isolation builds)
 │   ├── elibot_ros2_ws_robot/         # ROS2 workspace deployed ON the Raspberry Pi (camera, vision, teleop)

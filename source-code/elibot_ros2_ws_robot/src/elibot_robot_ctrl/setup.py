@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='elibot',
     maintainer_email='elibot@todo.todo',
-    description='TODO: Package description',
+    description="Evdev-keyboard teleop node for ELIBot's 4 drive motors + 3 manipulator servos, over serial to the STM32.",
     license='MIT',
     extras_require={
         'test': [
