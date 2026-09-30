@@ -146,6 +146,7 @@ The vision node can also run off-robot on a separate, more powerful machine over
 
 ### Videos
 
+- [Stage I practice run](https://drive.google.com/file/d/1u3so2-tLWOBUojRxOy6DUSRT6eiabuuC/view?usp=sharing) — a full practice run (not the official one) of ELIBot completing the Stage I challenge track ahead of the competition (hosted on Google Drive; not tracked in this repo due to file size)
 - [Stage II official run (Week 15)](https://drive.google.com/file/d/196SE-jIKrzIXMWrg3RmbG3_Q3yIPCxZ9/view?usp=sharing) — full video of ELIBot's official run on the challenge field for Stage II of the competition (hosted on Google Drive; not tracked in this repo due to file size)
 - [Full event livestream (Week 15)](https://www.youtube.com/live/wm4ukXukuMc) — the university's official broadcast of the entire robot challenge event, covering all teams, not just ELIBot's run. This team's segments:
   - [1:34:22](https://www.youtube.com/live/wm4ukXukuMc?t=5662s) – 1:37:34 — team introduction and the idea behind the robot's design
